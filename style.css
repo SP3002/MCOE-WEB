@@ -1,0 +1,292 @@
+/*importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+
+:root{
+    --first-color:  hsl(195,100%,30%);
+    --gradient-color: linear(90deg),hsl(210,55%,20%),hsl(192,62%,25%);
+    --title-color:hsl(210,52%,20%);
+    --text-color:hsl(210,24%,15%);
+    --white-color: #fff;
+    --body-color: hsl(207, 76%, 77%);
+
+    --body-font:"Black Ops One";
+    --second-font:"Signika Negative";
+
+}
+
+body{
+    background-color: var(--body-color);
+}
+
+
+/* styling of the container containing classes dropbtn, dropdown, dropcontent */
+.container{
+    position: relative;
+    display: inline-flex;
+    background-color: var(--body-color);
+}
+
+
+/* navbar elements of the page */
+.dropbtn {
+    background-color: transparent;
+    font-family:var(--body-font);
+    color:var(--title-color);
+    border: none;
+    padding: 0rem 1.5rem;
+    font-size: 16px;
+    
+    border: transparent;
+    cursor: pointer;
+    /* height: 100px; */
+    
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    height: 0px;
+}
+.dropcontent {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    min-width: 0px;
+    box-shadow: 0px 8px 16px 0 px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropcontent a {
+    background-color:gray;
+    opacity: 0.6;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropcontent a:hover {
+    transform: scale(1);
+    background-color: beige;
+    opacity: 2;
+}
+.dropdown:hover .dropcontent{
+        display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+.dropbtn:hover{
+    background-color:var(--first-color);
+    transform: scale(2);
+    
+}
+
+/* ----------------- COLLEGE AND CREDENTIALS------------------------- */
+Name{
+    position: absolute;
+    top: 180px;
+}
+h3{
+    display: block;
+    font-family: var(--second-font);
+    color: var(--text-color);
+  
+ 
+}
+h1{
+    display: block;
+    font-family: var(--body-font);
+    color: var(--title-color);
+  
+}
+h4{
+    display: block;
+    font-family: var(--second-font);
+    color: var(--text-color);
+   
+}
+
+/* ---------MCOE VIDEO------------------ */
+video{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 200px;
+}
+
+/* -------------------FLIP CARD OF FOUNDER OF PES -------------------------- */
+.container1{
+    width: 188px;
+    height: 268px;
+    perspective: 800px;
+    margin-right: 1%;
+}
+.container1:hover > .card1 {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card1{ 
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front1, .back1 {
+    height:100% ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px rgba(50,50,50,0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front1{
+    background-image: url(founderpes.jpeg);
+}
+.back1{
+    background-color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    font-size: 10px;
+    font-family: var(--second-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* -------------------FLIP CARD OF CHAIRMAN PES---------------- */
+.container2{
+    width: 188px;
+    height: 268px;
+    perspective: 800px;
+    position: absolute;
+    top: 350px;
+    left: 350px;
+}
+.container2:hover > .card2 {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card2{ 
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front2, .back2 {
+    height:100% ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px rgba(50,50,50,0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front2{
+    background-image: url(peschariman.jpeg);
+}
+.back2{
+    background-color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    font-size: 10px;
+    font-family: var(--second-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* -----------FLIP CARD PRINCIPAL MCOE-------------- */
+.container3{
+    width: 188px;
+    height: 268px;
+    perspective: 800px;
+    position: absolute;
+    top: 350px;
+    left: 650px;
+}
+.container3:hover > .card3 {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card3{ 
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front3, .back3 {
+    height:100% ;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px rgba(50,50,50,0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front3{
+    background-image: url(principal.jpeg);
+}
+.back3{
+    background-color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    font-size: 10px;
+    font-family: var(--second-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* events, notices of MCOE */
+/********* Campus, Events and Notice Board section CSS Starts **********/
+.event {
+    width: 32%;
+    margin-right: 1%;
+    float: left;
+    background-color: var(--body-color);
+    padding: 10px;
+  }
+  .event .heading {
+    border-bottom: 1px solid var(--first-color);
+    padding: 5px;
+    color: #fff;
+    background: var(--first-color);
+    text-align: center;
+    font-family: var(--second-font);
+  }
+  .event ul li {
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+    list-style: none;
+    font-family: var(--second-font);
+  }
+  .event-date {
+    background: var(--first-color);
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 12px;
+    margin-right: 10px;
+  }
+  
+  /********* Campus, Events and Notice Board section CSS End **********/
+
+/* -------------------FOOTER----------------------- */
+.footer{
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100px;
+    background-color: var(--first-color);
+    color: beige;
+    text-align: center;
+}
